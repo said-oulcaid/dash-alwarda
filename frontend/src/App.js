@@ -11,6 +11,10 @@ import { centreRoutes } from "./pages/centre/Routes";
 import { niveuaRoutes } from "./pages/niveau/Routes";
 import { paiementRoutes } from "./pages/paiement/Routes";
 
+
+
+// sjsjssj
+
 function App() {
   const { user } = useSelector((state) => state.auth);
   return (
