@@ -1,0 +1,127 @@
+.edite-eleve-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.edite-eleve-contant {
+    background-color: #33373E;
+    padding: 50px 40px;
+}
+
+.edite-eleve-contant h1 {
+    font-size: 25px;
+    font-weight: 900;
+    color: #FD83A8;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.edite-eleve-contant .double-input {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.edite-eleve-contant .group-input {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.edite-eleve-contant .group-input label {
+    color: #E5E7EB;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 10px 0 10px 0;
+}
+
+.edite-eleve-contant .group-input input {
+    padding: 5px 6px;
+    border: none;
+    border-radius: 5px;
+    outline-color: #FD83A8;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.edite-eleve-contant .group-input select {
+    padding: 6px 6px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    min-width: 200px;
+}
+
+.edite-eleve-contant button {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 5px;
+    cursor: not-allowed;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 5px;
+}
+.edite-eleve-contant  .matiere-select-contant{
+    display: flex;
+    margin-bottom: 7px;
+    gap: 10px;
+    max-width: 400px;
+    flex-wrap: wrap;
+}
+.edite-eleve-contant .matiere-select-contant span{
+   display: flex;
+   justify-content: space-between;
+   background-color: var(--text-color);
+   border-radius: 10px;
+   padding: 2px 5px;
+   gap: 10px;
+}
+.edite-eleve-contant .matiere-select-contant span .cancel-matiere{
+    pointer-events: auto;
+}
+.edite-eleve-contant .matiere-select-contant span svg{
+    color: rgb(166, 166, 166);
+}
+.edite-eleve-contant .matiere-select-contant span svg:hover{
+    color: #FD83A8;
+}
+
+@media screen and (max-width: 768px) {
+    .edite-eleve-container {
+        display: block;
+        padding: 90px 10px;
+        height: 100vh;
+    }
+
+    .edite-eleve-contant {
+        padding: 30px 20px;
+    }
+
+    .edite-eleve-contant h1 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .edite-eleve-contant .double-input {
+        display: block;
+        gap: 10px;
+    }
+
+    .edite-eleve-contant .group-input label {
+        color: #E5E7EB;
+        font-size: 15px;
+        font-weight: 900;
+        margin: 10px 0 10px 0;
+    }
+
+    .edite-eleve-contant .group-input input {
+        padding: 4px 5px;
+    }
+
+    .edite-eleve-contant .group-input select {
+        padding: 6px 6px;
+    }
+}

@@ -1,0 +1,100 @@
+.niveau-container {
+    padding: 30px 30px;
+    height: 90vh;
+    overflow: auto;
+}
+
+.niveau-contant {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+
+.niveau-container .niveau-titel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.niveau-container .niveau-titel h1 {
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.niveau-carte {
+    padding: 10px 10px;
+    background-color: var(--background-secondary-color);
+    min-width: 350px;
+    border-radius: 10px;
+}
+
+.niveau-carte h1 {
+    font-size: 25px;
+    font-weight: 900;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.niveau-carte .Row {
+    display: flex;
+    color: var(--text-color);
+}
+
+.niveau-carte .Row p {
+    color: var(--text-color);
+    font-size: 18px;
+    width: 150px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.niveau-carte .Row span {
+    margin-left: 5px;
+}
+
+.niveau-carte a {
+    font-size: 15px;
+    padding: 2px;
+    margin-left: 5px;
+    width: 40px;
+}
+
+.niveau-carte button {
+    font-size: 15px;
+    padding: 2px;
+    margin-left: 5px;
+    width: 40px;
+}
+
+@media screen and (max-width: 1500px) {
+    .niveau-contant {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .niveau-contant {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .niveau-container {
+        padding: 8px 8px;
+    }
+    
+    .niveau-contant {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 40px 0px;
+        gap: 15px;
+    }
+
+    .niveau-carte h1 {
+        margin-bottom: 25px;
+    }
+}

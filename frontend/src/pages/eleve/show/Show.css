@@ -1,0 +1,64 @@
+.eleve-container {
+    padding: 40px 40px 0px 40px;
+}
+
+.eleve-contant {
+    background-color: #E5E7EB;
+    border-radius: 10px;
+    padding: 5px 30px;
+    overflow: hidden;
+}
+
+.eleve-contant .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+.eleve-contant .header h1 {
+    color: var(--text-secondary-color);
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.eleve-contant .body table td,
+th {
+    white-space: nowrap;
+}
+
+.eleve-contant .body table thead select {
+    border: none;
+    background-color: transparent;
+    font-weight: bolder;
+    margin-left: -3px;
+}
+
+.eleve-contant .body table .td-button button {
+    font-size: 15px;
+    padding: 2px;
+    width: 40px;
+    margin-left: 5px;
+}
+
+.eleve-contant .body table .td-button a {
+    font-size: 15px;
+    padding: 2px;
+    margin-left: 5px;
+    width: 40px;
+}
+
+@media screen and (max-width:768px) {
+    .eleve-container {
+        padding: 40px 8px 0px 8px;
+    }
+
+    .eleve-contant {
+        padding: 6px 6px;
+    }
+
+    .eleve-contant .header h1 {
+        font-size: 30px;
+    }
+}

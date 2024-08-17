@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+:root {
+  --background-color: #20232A;
+  --text-color: #f5f5f5;
+  --text-secondary-color: #0F172A;
+  --background-secondary-color: #33373E;
+}
+
+.main-content {
+  background-color: var(--background-color);
+  min-height: 100vh;
+}
+
+.Pagination {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.Pagination li span svg {
+  font-size: larger;
+  padding-bottom: 1px;
+}
+
+.Pagination li {
+  font-size: 14px;
+  list-style: none;
+}
+
+.Pagination li:hover {
+  color: rgb(148, 148, 148);
+}
+
+.Pagination li.active {
+  color: #FD83A8;
+}
+
+.Disabled {
+  pointer-events: none;
+  color: rgb(151, 151, 151);
+}
+
+.disabled-button {
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px #fd83a8bb;
+  color: #e5e7ebc4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.open-button {
+  background-color: #FD83A8;
+  border: none;
+  color: #E5E7EB;
+  cursor: not-allowed;
+}
+
+.Pagination-mb {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 0 39px;
+  margin-top: 15px;
+}
+
+.Pagination-mb li {
+  list-style: none;
+}
+
+.Pagination-mb li svg {
+  font-size: 20px;
+}
+
+.spinner-grow.Loading{
+  background-color: rgba(255, 255, 255, 0);
+  width: 250px;
+}
+
+#filterByNom {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(154, 154, 154);
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width:768px) {
+  .Pagination {
+    display: none;
+  }
+
+  .Pagination-mb {
+    display: flex;
+  }
+
+  .main-content {
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 20px;
+  }
+}

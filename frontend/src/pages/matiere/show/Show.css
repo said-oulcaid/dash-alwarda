@@ -1,0 +1,116 @@
+.matiere-container {
+    padding: 30px 30px;
+    height: 90vh;
+    overflow: auto;
+}
+
+.matiere-contant {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.matiere-container .matiere-titel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.matiere-container .filterArray {
+    display: flex;
+    gap: 20px;
+    margin-top: -30px;
+}
+
+.matiere-container .filterArray select {
+    height: 25px;
+    width: 150px;
+    color: rgba(154, 154, 154, 0.726);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(154, 154, 154);
+}
+
+.matiere-container .matiere-titel h1 {
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.matiere-carte {
+    padding: 10px 10px;
+    background-color: var(--background-secondary-color);
+    min-width: 350px;
+    border-radius: 10px;
+}
+
+.matiere-carte h1 {
+    font-size: 25px;
+    font-weight: 900;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.matiere-carte .Row {
+    display: flex;
+    color: var(--text-color);
+    margin-bottom: -10px;
+}
+
+.matiere-carte .Row p {
+    color: var(--text-color);
+    font-size: 18px;
+    width: 150px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.matiere-carte .Row span {
+    margin-left: 5px;
+}
+
+.matiere-carte a {
+    font-size: 15px;
+    padding: 2px;
+    margin-left: 5px;
+    width: 40px;
+}
+
+.matiere-carte button {
+    font-size: 15px;
+    padding: 2px;
+    margin-left: 5px;
+    width: 40px;
+}
+
+@media screen and (max-width: 1500px) {
+    .matiere-contant {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .matiere-contant {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .matiere-container {
+        padding: 7px 7px;
+    }
+
+    .matiere-contant {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 4px 7px;
+        gap: 15px;
+    }
+
+    .matiere-carte h1 {
+        margin-bottom: 25px;
+    }
+}

@@ -1,0 +1,150 @@
+.create-eleve-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 10px 0;
+    height: auto;
+}
+
+.create-eleve-contant {
+    background-color: #33373E;
+    padding: 50px 40px;
+}
+
+.create-eleve-contant h1 {
+    font-size: 25px;
+    font-weight: 900;
+    color: #FD83A8;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.create-eleve-contant .double-input {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.create-eleve-contant .double_error {
+    display: flex;
+    gap: 60px;
+    color: rgba(243, 32, 32, 0.821);
+}
+
+.create-eleve-contant .group-input {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.create-eleve-contant .group-input label {
+    color: #E5E7EB;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 10px 0 10px 0;
+}
+
+.create-eleve-contant .group-input input {
+    padding: 5px 6px;
+    border: none;
+    border-radius: 5px;
+    outline-color: #FD83A8;
+    font-size: 15px;
+    font-weight: 500;
+    height: 3vh;
+}
+
+.create-eleve-contant .group-input .Error {
+    color: rgba(243, 32, 32, 0.821);
+    max-width: 200px;
+    font-size: 15px;
+    margin-bottom: -3px;
+}
+
+.create-eleve-contant .double-input .group-input .Error {
+    display: none;
+}
+
+.create-eleve-contant .group-input select {
+    padding: 5px 6px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    min-width: 200;
+}
+
+.create-eleve-contant button {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 5px;
+}
+.create-eleve-contant  .matiere-select-contant{
+    display: flex;
+    margin-bottom: 7px;
+    gap: 10px;
+    max-width: 400px;
+    flex-wrap: wrap;
+}
+.create-eleve-contant .matiere-select-contant span{
+   display: flex;
+   justify-content: space-between;
+   background-color: var(--text-color);
+   border-radius: 10px;
+   padding: 2px 5px;
+   gap: 10px;
+}
+.create-eleve-contant .matiere-select-contant span svg{
+    color: rgb(166, 166, 166);
+}
+.create-eleve-contant .matiere-select-contant span svg:hover{
+    color: #FD83A8;
+}
+
+@media screen and (max-width: 768px) {
+    .create-eleve-container {
+        display: block;
+        padding: 90px 10px;
+        height: auto;
+    }
+
+    .create-eleve-contant {
+        padding: 30px 20px;
+    }
+
+    .create-eleve-contant h1 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .create-eleve-contant .double-input {
+        display: block;
+        gap: 10px;
+    }
+
+    .create-eleve-contant .group-input label {
+        color: #E5E7EB;
+        font-size: 15px;
+        font-weight: 900;
+        margin: 10px 0 10px 0;
+    }
+
+    .create-eleve-contant .group-input input {
+        padding: 4px 5px;
+    }
+
+    .create-eleve-contant .group-input select {
+        padding: 6px 6px;
+    }
+
+    .create-eleve-contant .double_error {
+        display: none;
+    }
+
+    .create-eleve-contant .double-input .group-input .Error {
+        display: block;
+    }
+    
+}

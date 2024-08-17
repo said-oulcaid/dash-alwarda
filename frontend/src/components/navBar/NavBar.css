@@ -1,0 +1,148 @@
+.NavBar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.Profil-nav {
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.Profil-nav img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.NavBar-content button {
+    border: none;
+    border-radius: 40px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(254, 254, 254, 0);
+}
+
+.NavBar-content button svg {
+    font-size: 30px;
+    position: relative;
+    color: #FD83A8;
+}
+
+.NavBar-content button:hover {
+    background-color: white;
+}
+
+.profil-dropDown {
+    position: absolute;
+    border: none;
+    background-color: var(--background-secondary-color);
+    right: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 250px;
+    overflow: hidden;
+    padding: 20px 20px;
+    border-radius: 8px;
+}
+.user-profil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.user-profil span {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.close-profil-dropDown {
+    font-size: 20px;
+    background-color: aliceblue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(253, 253, 253, 0);
+}
+
+.close-profil-dropDown:hover {
+    background-color: white;
+}
+
+.close-profil-dropDown svg {
+    margin-bottom: 4px;
+    color: var(--text-color);
+}
+.close-profil-dropDown svg:hover{
+    color: black;
+}
+.profil-dropDown .user-name {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--text-color);
+
+}
+
+.profil-dropDown .user-role {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -3px;
+    color: var(--text-color);
+
+}
+
+.profil-dropDown .user-email {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -3px;
+    color: var(--text-color);
+}
+
+.logout-btn {
+    padding: 7px;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #FD83A8;
+    color: var(--text-color);
+    border: none;
+}
+@media screen and (max-width:768px) {
+    .Profil-nav {
+        width: 30px;
+        height: 30px;
+    }
+    .profil-dropDown {
+        width: 220px;
+        padding: 15px 15px;
+    }
+    .user-profil span {
+        font-size: 15px;
+    }
+    .close-profil-dropDown {
+        font-size: 18px;
+    }
+    .profil-dropDown .user-name {
+        font-size: 25px;
+    }
+    .profil-dropDown .user-role {
+        font-size: 12px;
+    }
+    .profil-dropDown .user-email {
+        font-size: 12px;
+    }
+    .logout-btn {
+        padding: 4px;
+        margin-top: 20px;
+    }
+    .full-scren{
+        display: none;
+    }
+}

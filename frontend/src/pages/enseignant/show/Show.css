@@ -1,0 +1,51 @@
+.enseignant-container {
+    padding: 40px 40px 0px 40px;
+}
+
+.enseignant-contant {
+    background-color: #E5E7EB;
+    border-radius: 10px;
+    padding: 10px 30px;
+    overflow: hidden ;
+}
+
+.enseignant-contant .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.enseignant-contant .header h1 {
+    color: var(--text-secondary-color);
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.enseignant-contant .body table td {
+    white-space: nowrap;
+}
+.enseignant-contant .body table .td-button button{
+    font-size: 15px;
+    padding: 2px;
+    width: 40px;
+    margin-left: 5px;
+}
+.enseignant-contant .body table .td-button a{
+    font-size: 15px;
+    padding: 2px;
+    margin-left: 5px;
+    width: 40px;
+}
+@media screen and (max-width:768px) {
+    .enseignant-container {
+        padding: 40px 8px 0px 8px;
+    }
+    .enseignant-contant {
+        padding: 6px 6px;
+    }
+    .enseignant-contant .header h1 {
+        font-size: 30px;
+    }
+}

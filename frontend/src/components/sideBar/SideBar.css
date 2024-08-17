@@ -1,0 +1,142 @@
+.sideBar-container {
+    height: 100vh;
+    background-color: var(--background-secondary-color);
+    overflow: hidden;
+}
+
+.sideBarOpen {
+    width: 270px;
+    min-width: 270px;
+    transition: 0.5s;
+}
+
+.sideBarClose {
+    width: 0;
+    min-width: 0;
+    transition: 0.5s;
+}
+
+.side-logo {
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+.side-links {
+    margin-top: 40px;
+    height: 90vh;
+}
+
+.side-links .side-link {
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 8px 15px;
+    margin: 0px 12px;
+    transition: all 0.2s;
+    margin-bottom: 15px;
+}
+
+.side-links .side-link a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--text-color);
+    transition: all 0.2s;
+}
+
+.side-links .side-link:hover {
+    background-color: #797979;
+    border-radius: 5px;
+}
+
+.side-links .side-link a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.side-links .side-link .dropDown {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.arrow-icon {
+    margin-left: auto;
+    font-size: 15px;
+    color: rgb(143, 133, 133);
+    transition: color 0.2s;
+}
+
+.side-links .side-link.with-dropdown:hover .arrow-icon {
+    color: #FF5C8E;
+}
+
+.side-links .side-link.with-dropdown:hover .dropDown {
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.side-links .side-link a.active {
+    color: #FF5C8E;
+}
+
+.side-links .side-link.action {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.side-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 2px 10px 10px;
+}
+
+.side-header span {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.close-side-bar {
+    font-size: 20px;
+    background-color: aliceblue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(253, 253, 253, 0);
+    display: none;
+}
+
+.close-side-bar:hover {
+    background-color: white;
+}
+
+.close-side-bar svg {
+    margin-bottom: 4px;
+    color: #FF5C8E;
+}
+
+@media screen and (max-width: 1117px) {
+    .sideBar-container {
+        position: fixed;
+        z-index: 1;
+    }
+
+    .close-side-bar {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .side-header span {
+        font-size: 25px;
+    }
+
+    .side-links .side-link {
+        font-size: 18px;
+    }
+}

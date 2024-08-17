@@ -1,0 +1,109 @@
+.create-matiere-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.create-matiere-contant {
+    background-color: #33373E;
+    padding: 50px 40px;
+}
+
+.create-matiere-contant h1 {
+    font-size: 25px;
+    font-weight: 900;
+    color: #FD83A8;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.create-matiere-contant .double-input {
+    display: flex;
+    gap: 20px;
+}
+
+.create-matiere-contant .group-input {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.create-matiere-contant .group-input label {
+    color: #E5E7EB;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 10px 0 10px 0;
+}
+
+.create-matiere-contant .group-input input {
+    padding: 5px 6px;
+    border: none;
+    border-radius: 5px;
+    outline-color: #FD83A8;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.create-matiere-contant .group-input select {
+    padding: 3px 6px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    max-width: 200px;
+    height: 32px;
+}
+
+.create-matiere-contant .group-input .Error {
+    color: rgba(243, 32, 32, 0.821);
+    font-size: 15px;
+    margin-bottom: -3px;
+}
+
+.create-matiere-contant button {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 5px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .create-matiere-container {
+        display: block;
+        padding: 90px 10px;
+        height: 100vh;
+    }
+
+    .create-matiere-contant {
+        padding: 30px 20px;
+    }
+
+    .create-matiere-contant h1 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .create-matiere-contant .double-input {
+        display: block;
+        gap: 10px;
+    }
+
+    .create-matiere-contant .group-input label {
+        color: #E5E7EB;
+        font-size: 15px;
+        font-weight: 900;
+        margin: 10px 0 10px 0;
+    }
+
+    .create-matiere-contant .group-input input {
+        padding: 4px 5px;
+    }
+
+    .create-matiere-contant .group-input select {
+        padding: 6px 6px;
+        max-width: none;
+    }
+}
